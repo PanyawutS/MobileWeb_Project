@@ -20,8 +20,8 @@
     "teacher-web": "file:"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build && move build teacher-web",
+    "deploy": "gh-pages -d teacher-web",
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
